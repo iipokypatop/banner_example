@@ -29,10 +29,12 @@ class Controller
             );
 
         $user_exists = false;
-
-        if (!isset($rows[0]['count'])) {
-            $user_exists = true;
+        if (isset($rows[0]['count'])) {
+            $user_exists = (int)($rows[0]['count']) === 1;
         }
+
+
+
 
         if (false === $user_exists) {
             \Task\Mysql::get()->query(
