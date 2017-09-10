@@ -1,0 +1,19 @@
+{
+  "name": "test/task",
+  "description": "task for proficiency level evaluation",
+  "keywords": ["usa", "relocation"],
+  "license": "troll_face",
+  "type": "project",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Task\\": "app/classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
